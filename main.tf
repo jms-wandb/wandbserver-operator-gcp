@@ -54,6 +54,8 @@ module "wandb" {
 
   disable_code_saving = var.disable_code_saving
   size                = var.size
+
+  stackdriver_sa_name = "jms-stackdriver"
 }
 
 # You'll want to update your DNS with the provisioned IP address
